@@ -8,12 +8,12 @@ public class Ceaser {
     private static int lengthOfAlphabet;
 
     //Create a constructor to define the properties of ceaserEncryptor
-    public void CeaserEncryptor(String statement, int  shiftBy){
+    public String ceaserEncryptor(String statement, int  shiftBy){
         this.statement = statement;
         this.shiftBy = shiftBy;
         this.lengthOfAlphabet = 26;
         //Call function to execute change
-        getChangedStatement(this.statement, this.shiftBy);
+        return getChangedStatement(this.statement, this.shiftBy);
     }
 
 
@@ -35,10 +35,11 @@ public class Ceaser {
             }else if(isUpperCase(statementChars[index])){
                 //Check for uppercase letters and commit change
                 statementChars[index] = shiftByCharacter(statementChars[index], shiftBy, 'A', 'Z');
-            }else if(isWhitespace(statementChars[index])){
-                //Check for a space in between the words
-                statementChars[index] = shiftByCharacter(statementChars[index], shiftBy, ' ', ' ');
             }
+            //else if(isWhitespace(statementChars[index])){
+//                //Check for a space in between the words
+//                statementChars[index] = shiftByCharacter(statementChars[index], shiftBy, ' ', ' ');
+//            }
         }
     }
 
