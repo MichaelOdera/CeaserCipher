@@ -14,12 +14,15 @@ public class App{
 
             try {
                 String choice = bufferedReader.readLine();
+                //Function to encrypt
                 if(choice.equals("1")){
                     Ceaser ceaser = new Ceaser();
                     System.out.println("Enter the statement that you would like to encrypt");
                     String textToBeEncrypted = bufferedReader.readLine();
                     System.out.println("Enter the key the you wish to encrypt with: (between 1 to 25)");
                     int userKeyToEncrypt = Integer.parseInt(bufferedReader.readLine());
+                    ceaser.ceaserEncryptor(textToBeEncrypted, userKeyToEncrypt);
+
 
                     System.out.println("Here are your results:");
                     System.out.println("Key: "+ ceaser.getShiftBy());
@@ -27,17 +30,19 @@ public class App{
                     System.out.println("Encryption: " + ceaser.ceaserEncryptor(textToBeEncrypted, userKeyToEncrypt));
 
 
+                //Function to decrypt
                 }else if(choice.equals("2")){
                     Ceaser ceaser = new Ceaser();
                     System.out.println("Enter the statement that you would like to be decrypted");
                     String textToBeDecrypted = bufferedReader.readLine();
-                    System.out.println("Enter the key the you wish to decrypt with: (between 1 to 25)");
+                    System.out.println("Enter the key it was decrypted with: (between 1 to 25)");
                     int userKeyToDecrypt = Integer.parseInt(bufferedReader.readLine());
+                    ceaser.ceaserEncryptor(textToBeDecrypted, -userKeyToDecrypt);
 
                     System.out.println("Here are your results:");
-                    System.out.println("Key: "+ ceaser.getShiftBy());
+                    System.out.println("DecryptionKey: "+ ceaser.getShiftBy());
                     System.out.println("Your Statement: "+ ceaser.getSubmittedStatement());
-                    System.out.println("Encryption: " + ceaser.ceaserEncryptor(textToBeDecrypted, -userKeyToDecrypt));
+                    System.out.println("Decryption: " + ceaser.ceaserEncryptor(textToBeDecrypted, -userKeyToDecrypt));
 
                  //Check if the input entered is part of what is required
                 }else{
