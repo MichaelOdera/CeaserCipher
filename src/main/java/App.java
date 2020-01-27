@@ -28,6 +28,16 @@ public class App{
                     System.out.println("Key: "+ ceaser.getShiftBy());
                     System.out.println("Your Statement: "+ ceaser.getSubmittedStatement());
                     System.out.println("Encryption: " + ceaser.ceaserEncryptor(textToBeEncrypted, userKeyToEncrypt));
+                    System.out.println("Enter 'YES' to continue with encryption or 'NO' to exit");
+                    String goOn = bufferedReader.readLine();
+                    if(goOn.equals("YES")){
+                        programRunning = true;
+                    }else if(goOn.equals("NO")){
+                        programRunning = false;
+                    }else{
+                        System.out.println("You are exited out of the program due to an invalid input");
+                        programRunning = false;
+                    }
 
 
                 //Function to decrypt
@@ -43,6 +53,17 @@ public class App{
                     System.out.println("DecryptionKey: "+ ceaser.getShiftBy());
                     System.out.println("Your Statement: "+ ceaser.getSubmittedStatement());
                     System.out.println("Decryption: " + ceaser.ceaserEncryptor(textToBeDecrypted, -(userKeyToDecrypt)));
+
+                    System.out.println("Enter 'YES' to continue with encryption or 'NO' to exit");
+                    String goOn = bufferedReader.readLine();
+                    if(goOn.equals("YES")){
+                        programRunning = true;
+                    }else if(goOn.equals("NO")){
+                        programRunning = false;
+                    }else{
+                        System.out.println("You are exited out of the program due to an invalid input");
+                        programRunning = false;
+                    }
 
                  //Check if the input entered is part of what is required
                 }else{
