@@ -1,5 +1,4 @@
 import java.lang.String;
-
 import static java.lang.Character.*;
 
 public class Ceaser {
@@ -13,7 +12,12 @@ public class Ceaser {
         this.shiftBy = shiftBy;
         this.lengthOfAlphabet = 26;
         //Call function to execute change
+        this.setText(statement);
         return getChangedStatement(this.statement, this.shiftBy);
+    }
+
+    private String setText(String statement) {
+        return statement;
     }
 
 
@@ -36,10 +40,7 @@ public class Ceaser {
                 //Check for uppercase letters and commit change
                 statementChars[index] = shiftByCharacter(statementChars[index], shiftBy, 'A', 'Z');
             }
-            //else if(isWhitespace(statementChars[index])){
-//                //Check for a space in between the words
-//                statementChars[index] = shiftByCharacter(statementChars[index], shiftBy, ' ', ' ');
-//            }
+
         }
     }
 
