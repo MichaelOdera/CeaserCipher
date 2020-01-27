@@ -54,14 +54,14 @@ public class App{
                     System.out.println("Your Statement: "+ ceaser.getSubmittedStatement());
                     System.out.println("Decryption: " + ceaser.ceaserEncryptor(textToBeDecrypted, -(userKeyToDecrypt)));
 
-                    System.out.println("Enter 'YES' to continue with the cipher or 'NO' to exit");
+                    System.out.println("Type 'YES' to continue or 'NO' to exit");
                     String goOn = bufferedReader.readLine();
                     if(goOn.equals("YES")){
                         programRunning = true;
                     }else if(goOn.equals("NO")){
                         programRunning = false;
                     }else{
-                        System.out.println("You are exited out of the program due to an invalid input");
+                        System.out.println("You are logged out of the program due to an invalid input");
                         programRunning = false;
                     }
 
