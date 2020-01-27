@@ -38,7 +38,7 @@ There were no major bugs only that the tokens had to be hidden and referenced co
 You may will need to install java version 11. The use of gradle will also come in handy. I otherwise needful, VScode maybe a preferred option in the absence of gradle.
 
 ## Description
-The project above, allows someone to enter the name and a username, and if the username is on github, the user's profile and the various repositores that are related to hime are then displayed on the screen. The user can use the navabar to go directly to the repositiories of the github search directly on click. The user is also able to go back  and check the user's original page on click through redirection.
+The project describes the ability of one to enter details of a particular statement that needs to be coded or decoded. The statement is thus decrypted or encrypted by the use of Ceaser Cypher and a key that is entered by a particular individual.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
