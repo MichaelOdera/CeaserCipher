@@ -46,7 +46,7 @@ public class App{
 
                  //Check if the input entered is part of what is required
                 }else{
-                    System.out.println("You have entered an invalid choice");
+                    System.out.println("You have entered an invalid choice!");
                     programRunning = false;
                 }
 
