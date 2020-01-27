@@ -28,7 +28,7 @@ public class App{
                     System.out.println("Key: "+ ceaser.getShiftBy());
                     System.out.println("Your Statement: "+ ceaser.getSubmittedStatement());
                     System.out.println("Encryption: " + ceaser.ceaserEncryptor(textToBeEncrypted, userKeyToEncrypt));
-                    System.out.println("Enter 'YES' to continue with encryption or 'NO' to exit");
+                    System.out.println("Enter 'YES' to continue with the cipher or 'NO' to exit");
                     String goOn = bufferedReader.readLine();
                     if(goOn.equals("YES")){
                         programRunning = true;
