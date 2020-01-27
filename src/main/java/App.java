@@ -42,7 +42,7 @@ public class App{
                     System.out.println("Here are your results:");
                     System.out.println("DecryptionKey: "+ ceaser.getShiftBy());
                     System.out.println("Your Statement: "+ ceaser.getSubmittedStatement());
-                    System.out.println("Decryption: " + ceaser.ceaserEncryptor(textToBeDecrypted, -userKeyToDecrypt));
+                    System.out.println("Decryption: " + ceaser.ceaserEncryptor(textToBeDecrypted, -(userKeyToDecrypt)));
 
                  //Check if the input entered is part of what is required
                 }else{
