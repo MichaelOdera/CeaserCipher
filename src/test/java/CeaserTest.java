@@ -79,4 +79,24 @@ public class CeaserTest {
 
     }
 
+
+    //Check if the input statement can be retrieved
+    @Test
+    public void checkIfGetsSameSubmittedStatement(){
+        Ceaser ceaser = new Ceaser();
+        String checkStatement = ceaser.ceaserEncryptor("potter", 0);
+        assertEquals(checkStatement , ceaser.getSubmittedStatement());
+    }
+
+    //Check if gets key entered
+    @Test
+    public void checkIfGetsEnteredKey(){
+        Ceaser ceaser = new Ceaser();
+        int result = 1;
+        ceaser.ceaserEncryptor("power", 1);
+        assertEquals(result, ceaser.getShiftBy());
+    }
+
+
+
 }
