@@ -29,10 +29,10 @@ public class App{
                     System.out.println("Your Statement: "+ ceaser.getSubmittedStatement());
                     System.out.println("Encryption: " + ceaser.ceaserEncryptor(textToBeEncrypted, userKeyToEncrypt));
                     System.out.println("Enter 'YES' to continue with the cipher or 'NO' to exit");
-                    String goOn = bufferedReader.readLine();
-                    if(goOn.equals("YES")){
+                    String proceed = bufferedReader.readLine();
+                    if(proceed.equals("YES")){
                         programRunning = true;
-                    }else if(goOn.equals("NO")){
+                    }else if(proceed.equals("NO")){
                         programRunning = false;
                     }else{
                         System.out.println("You are exited out of the program due to an invalid input");
@@ -53,6 +53,16 @@ public class App{
                     System.out.println("DecryptionKey: "+ ceaser.getShiftBy());
                     System.out.println("Your Statement: "+ ceaser.getSubmittedStatement());
                     System.out.println("Decryption: " + ceaser.ceaserEncryptor(textToBeDecrypted, -(userKeyToDecrypt)));
+
+                    String continueStill = bufferedReader.readLine();
+                    if(continueStill.equals("YES")){
+                        programRunning = true;
+                    }else if(continueStill.equals("NO")){
+                        programRunning = false;
+                    }else{
+                        System.out.println("You are exited out of the program due to an invalid input");
+                        programRunning = false;
+                    }
 
 
 
