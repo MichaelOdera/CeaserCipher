@@ -20,7 +20,7 @@ In case of any bugs or improvements, contact me through email:michogelira@gmail.
 This is a command line application
 
 ## Code Beat Badge
-<a href="https://codebeat.co/projects/github-com-michaelodera-ceasercipher-getter-feature"><img alt="codebeat badge" src="https://codebeat.co/badges/2144d21f-687a-4e83-9b96-cf20bb04b7bf" /></a>
+[![codebeat badge](https://codebeat.co/badges/372c98be-89c2-4c3a-96ca-a6a2e60b3bb6)](https://codebeat.co/projects/github-com-michaelodera-ceasercipher-dev)
 
 
 
