@@ -60,7 +60,7 @@ public class App{
                     }else if(continueStill.equals("NO")){
                         programRunning = false;
                     }else{
-                        System.out.println("You are exited out of the program due to an invalid input");
+                        System.out.println("You have been logged out of the program.");
                         programRunning = false;
                     }
 
