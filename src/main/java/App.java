@@ -54,16 +54,7 @@ public class App{
                     System.out.println("Your Statement: "+ ceaser.getSubmittedStatement());
                     System.out.println("Decryption: " + ceaser.ceaserEncryptor(textToBeDecrypted, -(userKeyToDecrypt)));
 
-                    System.out.println("Type 'YES' to continue or 'NO' to exit");
-                    String goOnStill = bufferedReader.readLine();
-                    if(goOnStill.equals("YES")){
-                        programRunning = true;
-                    }else if(goOnStill.equals("NO")){
-                        programRunning = false;
-                    }else{
-                        System.out.println("You are logged out of the program due to an invalid input");
-                        programRunning = false;
-                    }
+
 
                  //Check if the input entered is part of what is required
                 }else{
