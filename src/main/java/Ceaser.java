@@ -26,12 +26,12 @@ public class Ceaser {
         //Transform the string to an array
         char[] statementChars = statement.toCharArray();
         //Call function to execute the change for the whole string
-        shiftAlphabets(statementChars, this.shiftBy);
+        loopThroughAlphabets(statementChars, this.shiftBy);
         return new String(statementChars);
     }
 
     //Create a function to shift the alphabets according to the shift key provided
-    private void shiftAlphabets(char[] statementChars, int shiftBy) {
+    private void loopThroughAlphabets(char[] statementChars, int shiftBy) {
         for(int index = 0; index<statementChars.length; ++index){
             //Check if the character is lower case and then change appropriately
             if(isLowerCase(statementChars[index])){
